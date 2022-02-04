@@ -95,9 +95,9 @@ while h < (len(table_content)) and i < (len(table_content)) and j < (len(table_c
     h+=incr
 
 def write_to_json(d):
-    with open(f'C:/Users/xandr/Desktop/{address}.json', 'w') as file:  # Used C:/ since my current system is Windows
+    with open(f'C:/your_path/{address}.json', 'w') as file:  # Used C:/ since my current system is Windows
         json.dump(d, file, indent=4)
         file.truncate()
         file.close()
 
-write_to_json(fift_condo_details)
+#write_to_json(fift_condo_details)
