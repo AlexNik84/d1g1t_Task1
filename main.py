@@ -13,11 +13,11 @@ chrome = webdriver.Chrome(executable_path="C:/Users/xandr/Desktop/chromedriver.e
 chrome.maximize_window()
 chrome.get("https://condos.ca?nocache=1")
 
-"""chrome.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+'''chrome.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 wait = WebDriverWait(chrome, 20)
 element = chrome.find_element("#search-input")
 wait.until(EC.element_to_be_clickable((By.ID, "#search-input")))
-element.click()"""
+element.click()'''
 
 inputPath = '#autoComplete > div.styles___Flex-sc-1lfxfux-0.clKrwZ.styles___InputContainer-sc-1rclri9-3.gjrMjh > div > div.styles___AlgoAutoSuggest-sc-1km20ud-0.iEWSjz.appAutoSuggest > div > input'
 WebDriverWait(chrome, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, inputPath))).send_keys("Toronto")
